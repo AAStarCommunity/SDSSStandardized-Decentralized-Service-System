@@ -77,6 +77,25 @@ flowchart LR
 3. SDSS protocol: A standard service invoke protocol, protocol and data structure.
     https://github.com/AAStarCommunity/SDSS , (this repo)
 
+## SDSS V0.1
+
+### API interface standard
+1. Restful API
+2. URL，请求参数，返回值，状态码，错误码，错误信息，错误码列表，完全遵守HTTP/1.1
+3. 新增路径发行协议
+    1. 依赖SDSS维护者，提供免费且可转移所有权的ENS域名，以此为基础，提供路径发行的机制。
+    2. 对于AAStar维护的机制，我们提供发行paymaster.aastar.eth，发现所有服务者和调用配置。
+    3. 服务提供者无许可的进行服务注册（使用我们提供的开源服务和自检、注册工具）
+4. 新增多路调用机制（为防止DDos，需要支付token）
+5. 原有的Restful API，单独调用依然有效
+6. 新增 Reputation 系统，用于评估服务提供者和调用者的成功率，提供不同的权限  
+
+### ENS text record standard
+
+### Onchain node register standard
+
+### Standard invoking flow
+
 ## Demo
 We create a simple demo for SDSS(Rain Computing) on gas payment senarios.
 1. Register a node in node registry.
